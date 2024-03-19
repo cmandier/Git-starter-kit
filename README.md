@@ -7,8 +7,7 @@ Cette formation s'adresse au personne de toute communauté voulant débuter dans
 ### Prérequis
 
 - Système d'exploitation demandé : Linux ou Windows (avec WSL2)
-- Notions de script
-- Notion de commandes bash (navigation dans linux)
+- Notion de base des commandes Unix
 
 ### Objectifs 
 
@@ -44,8 +43,25 @@ Mais du coup quelle est la différence entre GitHub, GitLab et Bitbucket ?
 GitHub est donc une interface web permettant la communication et la collaboration entre plusieurs développeurs, il permet de contribuer à des projets open source (projets où le code est conçu pour être accessible au public). Cependant, il est sous la tutelle de Microsoft ainsi pas mal de fonctionnalités gratuites sont limités et Microsoft peut avoir accès à toutes vos ressources. Afin de contrer ça GitLab a été créé.
 GitLab est l’alternative à GitHub, qui propose une version gratuite plus développée, GitLab peut être hébergé par les services de GitLab ou peut être hébergé directement sur vos propres serveurs.
 
-Il faut savoir qu'il existe une dernière plateforme Bitbucket en version gratuite qui est la préférence des utilisateurs de Atlassian (éditeur de logiciel). 
+Il faut savoir qu'il existe une autre plateforme Bitbucket en version gratuite qui est la préférence des utilisateurs de Atlassian (éditeur de logiciel). 
 
-Pour notre atélier, nous vous proposons l'utilisation de GitHub / GitLab.
+Pour notre atelier, nous vous proposons l'utilisation de GitHub / GitLab.
 
+
+
+## Découverte de la plateforme GitLab / GitHub
+
+### Overview
+
+La partie overview vous donne un aperçu de votre activité sur la plateforme.
+
+![Overview](images/overview_github.png)
+
+### Repositories 
+
+Dans cet espace vous trouverez une liste tous vos dépôts distants qu'ils soient privés ou publics.
+
+![Repositories](images/profil_git.png)
+
+### Création du projet
 
