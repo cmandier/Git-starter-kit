@@ -4,6 +4,8 @@
 
 Cette formation s'adresse au personne de toute communauté voulant débuter dans la gestion de version de script et la sécurisation de leurs travaux. Cette formation est sous forme d'atelier pratique. Un dépôt GitHub est disponible avec les examples mis en place.
 
+Formation destinée à un petit commité de façon a pouvoir échanger efficacement. 
+
 ### Prérequis
 
 - Système d'exploitation demandé : Linux ou Windows (avec WSL2)
@@ -16,6 +18,17 @@ Cette formation s'adresse au personne de toute communauté voulant débuter dans
 - Gestion des commits
 - Notion de branch / merge
 - Ouverture vers la collaboration
+
+## Installation des outils
+
+Installation de WSL2 : suivre le mode d'emploi https://learn.microsoft.com/fr-fr/windows/wsl/install 
+
+
+
+Installation de Git :
+
+Création de compte GitHub :
+
 
 
 ## Partie théorique
@@ -61,7 +74,7 @@ La partie overview vous donne un aperçu de votre activité sur la plateforme.
 
 Dans cet espace vous trouverez une liste tous vos dépôts distants qu'ils soient privés ou publics.
 
-![Repositories](images/profil_git.png)
+![Repositories](images/repositories_github.png)
 
 ### Création du projet
 
