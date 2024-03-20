@@ -65,27 +65,33 @@ $ sudo apt install git-all ## Installation de git
 $ git --version ## Vérification de l'installation
 ```
 
-### Création de compte GitHub
+### Création du compte GitHub
 
-Pour créer un compte GitHub, veuillez vous rendre sur le site de [GitHub](https://github.com/), cliquez sur le bouton Sign Up présent sur la page d'accueil.
+Pour créer un compte GitHub, veuillez vous rendre sur le site de [GitHub](https://github.com/), cliquez sur le bouton **Sign Up** présent sur la page d'accueil.
 
 ![Accueil](images/pres_github.png)
 
+<br>
+
 Renseignez les informations demandés dans les champs.
 ![Sign Up](images/sign_up.png)
+
+<br>
 
 Résolvez le captcha.
 
 ![Captcha](images/captcha.png)
 
-Un code de vérification vous sera envoyé sur votre adresse e-mail afin de confirmer votre identité.
+<br>
 
-Par défaut vous avez accès à la version gratuite de GitHub, mais il faut savoir que des versions payantes sont disponibles proposant plus de fonctionnalités en fonction des besoins de l'utilisateur. 
+Un code de vérification vous sera envoyé sur votre adresse e-mail afin de confirmer votre identité. Par défaut vous avez accès à la version gratuite de GitHub, mais il faut savoir que des versions payantes sont disponibles proposant plus de fonctionnalités en fonction des besoins de l'utilisateur. 
 
 
 ## Partie théorique
 
-Un gestionnaire de version est un logiciel qui permet aux utilisateurs de conserver un historique des modifications et des versions de tous leurs fichiers. 
+### Gestionnaire de versions
+
+Un gestionnaire de versions est un logiciel qui permet aux utilisateurs de conserver un historique des modifications et des versions de tous leurs fichiers. 
 Il va garder :
 -	une trace de chaque modification réalisée sur chaque fichier, 
 -	un descriptif de cette modification donné par l’utilisateur
@@ -98,7 +104,7 @@ Les gestionnaires de versions sont utiles aussi bien en travail personnel qu’e
 
 Ici nous introduirons le gestionnaire de version Git, ainsi que les plateformes en ligne associées.
 
-**Reprenons avec ces outils !**
+### Git et ses plateformes en ligne
 
 Git est le gestionnaire, il sert pour la création d’un dépôt local et pour gérer les versions des fichiers. GitHub / GitLab /  Bitbucket sont donc des services en ligne, qui héberge le dépôt distant. Il permet de stocker les différentes versions de votre code afin de garder un historique délocalisé pour assurer d’avoir une copie sur un réseau de vos travaux. 
 Vous allez donc avoir deux copies de votre projet, une en local et une en distanciel. C’est en local que les modifications des fichiers vont être réalisées et c’est en distanciel que les fichiers vont être stockés et diffusés au besoin si le dépôt est en public. 
@@ -106,19 +112,15 @@ Vous allez donc avoir deux copies de votre projet, une en local et une en distan
 Mais du coup quelle est la différence entre GitHub, GitLab et Bitbucket ?
 
 GitHub est donc une interface web permettant la communication et la collaboration entre plusieurs développeurs, il permet de contribuer à des projets open source (projets où le code est conçu pour être accessible au public). Cependant, il est sous la tutelle de Microsoft ainsi pas mal de fonctionnalités gratuites sont limités et Microsoft peut avoir accès à toutes vos ressources. Afin de contrer ça GitLab a été créé.
-GitLab est l’alternative à GitHub, qui propose une version gratuite plus développée, GitLab peut être hébergé par les services de GitLab ou peut être hébergé directement sur vos propres serveurs.
+GitLab est l’alternative à GitHub, qui propose une version gratuite plus développée, GitLab peut être hébergé par les services de GitLab ou peut être hébergé directement sur vos propres serveurs. Il faut savoir qu'il existe une autre plateforme Bitbucket en version gratuite qui est préférée par utilisateurs de Atlassian (éditeur de logiciel). 
 
-Il faut savoir qu'il existe une autre plateforme Bitbucket en version gratuite qui est la préférence des utilisateurs de Atlassian (éditeur de logiciel). 
-
-Pour notre atelier, nous vous proposons l'utilisation de GitHub / GitLab.
-
-
+Pour notre atelier, nous vous proposons l'utilisation de GitHub.
 
 ## Découverte de la plateforme GitHub
 
 ### Profil
 
-La partie `Overview` vous donne un aperçu de votre activité sur la plateforme.
+La partie `Overview` vous donne un aperçu de votre activité sur la plateforme tel que les contributions (actions réalisées sur vos dépôts personnels ou partagés).
 
 ![Overview](images/overview_github.png)
 
@@ -128,13 +130,35 @@ Dans l'espace `Repositories` vous trouverez une liste tous vos dépôts distants
 
 ![Repositories](images/repositories_github.png)
 
-### Création du projet
 
-Initialiser votre Git :
+## Création d'un projet
 
-Rentrer les commandes 
-git config --global user.name "votre nom / pseudo"
-git config --global user.email "user@example.com"
+### Configuration de votre Git
+
+Avant toutes choses, il faut permettre à Git de vous identifier. C'est pour cela qu'il faut réaliser une configuration de votre identité. Pour cela, ouvrez votre terminal Linux et commencez à renseigner votre nom d'utilisateur (celui que vous allez utiliser sur la plateforme GitHub) et votre email (celle que vous allez utiliser sur la plateforme GitHub) à l'aide des commandes suivantes :
+
+```bash
+$ git config --global user.name "nom.utilisateur" 
+$ git config --global user.email utilisateur@exemple.com
+
+```
+L'option --global permet d'indiquer que cette configuration est valable dans le temps, vous n'aurez pas besoin de la re-rentrer à la venir.
+
+Ensuite, vérifier vos informations via la commande :
+
+```bash
+$ git config --list 
+
+```
+
+
+### Création d'un projet via la plateforme GitHub (distant)
+
+
+### Création d'un projet sur votre machine (local)
+
+
+
 
 ## Licence
 Distribué sous la Licence CC BY NC-SA. Voir `LICENCE.txt` pour plus d'information.
