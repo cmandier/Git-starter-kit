@@ -1,4 +1,4 @@
-# ![header_isdm](images/header.png =x900 300x)
+# ![header_isdm](images/header.png) { width=100% }
 
 <!-- BADGES -->
 [![Licence][license-shield]][license-url]
