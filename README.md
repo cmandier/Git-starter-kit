@@ -1,4 +1,4 @@
-# ![](images/header.png)
+# <div align="center"> <img src="images/header.png" alt="Logo" width="1000" height="250"> </a>
 
 <!-- BADGES -->
 [![Licence][license-shield]][license-url]
