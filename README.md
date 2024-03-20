@@ -2,13 +2,11 @@
 
 ## Modalités de la formation
 
-Cette formation s'adresse au personne de toute communauté voulant débuter dans la gestion de version de script et la sécurisation de leurs travaux. Cette formation est sous forme d'atelier pratique. Un dépôt GitHub est disponible avec les examples mis en place.
-
-Formation destinée à un petit commité de façon a pouvoir échanger efficacement. 
+Cette formation s'adresse au personne de toute communauté voulant débuter dans la gestion de version de script et la sécurisation de leurs travaux. Cette formation est sous forme d'exercice pratique. Un dépôt GitHub est disponible avec les examples présenté en atelier.
 
 ### Prérequis
 
-- Système d'exploitation demandé : Linux ou Windows (avec WSL2)
+- Système d'exploitation demandé : Linux ou Windows 10 / 11 avec [WSL2](https://learn.microsoft.com/fr-fr/windows/wsl/about) 
 - Notion de base des commandes Unix
 
 ### Objectifs 
@@ -19,16 +17,38 @@ Formation destinée à un petit commité de façon a pouvoir échanger efficacem
 - Notion de branch / merge
 - Ouverture vers la collaboration
 
-## Installation des outils
+## Mise en place des outils
 
-Installation de WSL2 : suivre le mode d'emploi https://learn.microsoft.com/fr-fr/windows/wsl/install 
+### Installation
+- Installation de WSL2 suivre les instructions de ce [site](https://learn.microsoft.com/fr-fr/windows/wsl/install) 
+- Installation de Git :
++ Pour les distributions basées sur Debian, telle que Ubuntu, veuillez ouvrir votre terminal Linux est rentrer la commande :
+```bash
+$ sudo apt install git-all ## Installation de git
+$ git --version ## Verification de l'installation
+```
+- Pour les distributions basées sur RPM (Redhat Package Manager), telle que Fedora veuillez vous référer à l'installation proposé par ce [lien](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git)
 
 
+### Création de compte
 
-Installation de Git :
+Pour créer un compte GitHub, veuillez vous rendre sur le site de [GitHub](https://github.com/), cliquez sur le bouton Sign Up présent sur la page d'accueil.
 
-Création de compte GitHub :
+![Accueil](images/pres_github.png)
 
+Renseignez les informations demandés dans les champs.
+![Sign Up](images/sign_up.png)
+
+Renseignez les informations demandés dans les champs.
+![Sign Up](images/sign_up.png)
+
+Résolvez le captcha.
+
+![Captcha](images/captcha.png)
+
+Un code de vérification vous sera envoyé sur votre adresse e-mail afin de confirmer votre identité.
+
+Par défaut vous avez accès à la version gratuite de GitHub, mais il faut savoir que des versions payantes sont disponibles proposant plus de fonctionnalités en fonction des besoins de l'utilisateur. 
 
 
 ## Partie théorique
@@ -78,3 +98,8 @@ Dans cet espace vous trouverez une liste tous vos dépôts distants qu'ils soien
 
 ### Création du projet
 
+Initialiser votre Git :
+
+Rentrer les commandes 
+git config --global user.name "votre nom / pseudo"
+git config --global user.email "user@example.com"
