@@ -1,4 +1,4 @@
-# ![header_isdm](images/header.png){width=100%}
+# <div align="center"> <img src="images/header.png" alt="Logo" width="80" height="80"> </a>
 
 <!-- BADGES -->
 [![Licence][license-shield]][license-url]
