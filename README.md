@@ -1,4 +1,4 @@
-# <div align="center"> <img src="images/header.png" alt="Logo" width="1000" height="250"> </a>
+# ![](images/header.png)
 
 <!-- BADGES -->
 [![Licence][license-shield]][license-url]
@@ -141,7 +141,9 @@ Distribué sous la Licence CC BY NC-SA. Voir `LICENCE.txt` pour plus d'informati
 
 ## Contact
 
-Céline Mandier celine.mandier@umontpellier.fr
+Céline Mandier 
+
+Email : celine.mandier@umontpellier.fr
 
 <!-- LIENS MARKDOWN -->
 [license-shield]:https://img.shields.io/badge/CC%20BY%20NC%20SA-Licence?style=for-the-badge&label=LICENCE&link=https%3A%2F%2Fgithub.com%2Fcmandier%2FGit-starter-kit%2Fblob%2Fmain%2FLICENCE.txt
