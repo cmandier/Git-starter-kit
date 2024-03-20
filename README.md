@@ -118,13 +118,13 @@ Pour notre atelier, nous vous proposons l'utilisation de GitHub / GitLab.
 
 ### Profil
 
-La partie overview vous donne un aperçu de votre activité sur la plateforme.
+La partie `Overview` vous donne un aperçu de votre activité sur la plateforme.
 
 ![Overview](images/overview_github.png)
 
 ### Répertoire
 
-Dans cet espace vous trouverez une liste tous vos dépôts distants qu'ils soient privés ou publics.
+Dans l'espace `Repositories` vous trouverez une liste tous vos dépôts distants qu'ils soient privés ou publics.
 
 ![Repositories](images/repositories_github.png)
 
@@ -141,9 +141,7 @@ Distribué sous la Licence CC BY NC-SA. Voir `LICENCE.txt` pour plus d'informati
 
 ## Contact
 
-Céline Mandier 
-
-Email : celine.mandier@umontpellier.fr
+Céline Mandier - celine.mandier@umontpellier.fr
 
 <!-- LIENS MARKDOWN -->
 [license-shield]:https://img.shields.io/badge/CC%20BY%20NC%20SA-Licence?style=for-the-badge&label=LICENCE&link=https%3A%2F%2Fgithub.com%2Fcmandier%2FGit-starter-kit%2Fblob%2Fmain%2FLICENCE.txt
