@@ -1,4 +1,39 @@
 # Git-starter-kit
+<!-- BADGES -->
+[![Forks][forks-shield]][forks-url]
+[![Licence][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<!-- TABLE DES MATIERES -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#modalités-de-la-formation">Modalités de la formation</a>
+      <ul>
+        <li><a href="#prérequis">Prérequis</a></li>
+        <li><a href="#objectifs">Objectifs</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#mise-en-place-des-outils">Mise en place des outils</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#création-de-compte-github">Création de compte GitHub</a></li>
+      </ul>
+    </li>
+    <li><a href="#partie-théorique">Partie théorique</a></li>
+    <li>
+      <a href="#découverte-de-la-plateforme-github">Découverte de la plateforme GitHub</a>
+      <ul>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#répertoire">Répertoire</a></li>
+      </ul>
+    </li>
+    <li><a href="#licence">Licence</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
 ## Modalités de la formation
 
@@ -22,22 +57,19 @@ Cette formation s'adresse au personne de toute communauté voulant débuter dans
 ### Installation
 - Installation de WSL2 suivre les instructions de ce [site](https://learn.microsoft.com/fr-fr/windows/wsl/install) 
 - Installation de Git :
-+ Pour les distributions basées sur Debian, telle que Ubuntu, veuillez ouvrir votre terminal Linux est rentrer la commande :
+    + Pour les distributions basées sur RPM (Redhat Package Manager), telle que Fedora veuillez vous référer à l'installation proposé par ce [lien](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git)
+
+    + Pour les distributions basées sur Debian, telle que Ubuntu, veuillez ouvrir votre terminal Linux est rentrer la commande :
 ```bash
 $ sudo apt install git-all ## Installation de git
 $ git --version ## Verification de l'installation
 ```
-- Pour les distributions basées sur RPM (Redhat Package Manager), telle que Fedora veuillez vous référer à l'installation proposé par ce [lien](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git)
 
-
-### Création de compte
+### Création de compte GitHub
 
 Pour créer un compte GitHub, veuillez vous rendre sur le site de [GitHub](https://github.com/), cliquez sur le bouton Sign Up présent sur la page d'accueil.
 
 ![Accueil](images/pres_github.png)
-
-Renseignez les informations demandés dans les champs.
-![Sign Up](images/sign_up.png)
 
 Renseignez les informations demandés dans les champs.
 ![Sign Up](images/sign_up.png)
@@ -82,15 +114,15 @@ Pour notre atelier, nous vous proposons l'utilisation de GitHub / GitLab.
 
 
 
-## Découverte de la plateforme GitLab / GitHub
+## Découverte de la plateforme GitHub
 
-### Overview
+### Profil
 
 La partie overview vous donne un aperçu de votre activité sur la plateforme.
 
 ![Overview](images/overview_github.png)
 
-### Repositories 
+### Répertoire
 
 Dans cet espace vous trouverez une liste tous vos dépôts distants qu'ils soient privés ou publics.
 
@@ -103,3 +135,18 @@ Initialiser votre Git :
 Rentrer les commandes 
 git config --global user.name "votre nom / pseudo"
 git config --global user.email "user@example.com"
+
+## Licence
+
+## Contact
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/cmandier/Git-starter-kit/tree/LICENCE.txt
+[linkedin-shield]: https://img.shields.io/badge/Linkedin-ISDM?style=for-the-badge&color=%230e76a8&link=https%3A%2F%2Ffr.linkedin.com%2Fcompany%2Finstitut-de-science-des-donn%25C3%25A9es-montpellier%3Ftrk%3Dpublic_post_feed-actor-name
+[linkedin-url]: https://fr.linkedin.com/company/institut-de-science-des-donn%C3%A9es-montpellier?trk=public_post_feed-actor-name
+
