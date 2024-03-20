@@ -1,4 +1,4 @@
-# <div align="center"> <img src="images/header.png" alt="Logo" width="600" height="250"> </a>
+# <div align="center"> <img src="images/header.png" alt="Logo" width="800" height="350"> </a>
 
 <!-- BADGES -->
 [![Licence][license-shield]][license-url]
