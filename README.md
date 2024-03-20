@@ -1,6 +1,5 @@
 # Git-starter-kit
 <!-- BADGES -->
-[![Forks][forks-shield]][forks-url]
 [![Licence][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
