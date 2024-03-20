@@ -1,8 +1,12 @@
-# <div align="center"> <img src="images/header.png" alt="Logo"> </a>
+# <div align="center"> <img src="images/header.png" alt="Logo"> </div>
 
 <!-- BADGES -->
+<div align="center">
+
 [![Licence][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+
+</div>
 
 <!-- TABLE DES MATIERES -->
 <details>
@@ -102,11 +106,11 @@ Les gestionnaires de versions sont utiles aussi bien en travail personnel qu’e
 -	Travail personnel : il permet de garder un suivi des modifications que vous avez apporté et de revenir à une version précédente au besoin.
 -	Travail en équipe : Permet de fusionner les modifications de chaque membres du groupe en gardant une trace des actions de chacun. Et bien évidemment, il permet de revenir à des versions précédentes également afin d'éviter de supprimer le travail des autres.
 
-Ici nous introduirons le gestionnaire de version Git, ainsi que les plateformes en ligne associées.
+Ici, nous introduirons le gestionnaire de version Git, ainsi que les plateformes en ligne associées.
 
 ### Git et ses plateformes en ligne
 
-Git est le gestionnaire, il sert pour la création d’un dépôt local et pour gérer les versions des fichiers. GitHub / GitLab /  Bitbucket sont donc des services en ligne, qui héberge le dépôt distant. Il permet de stocker les différentes versions de votre code afin de garder un historique délocalisé pour assurer d’avoir une copie sur un réseau de vos travaux. 
+Git est donc un gestionnaire de version, il sert pour la création d’un dépôt local et pour gérer les versions des fichiers. GitHub / GitLab /  Bitbucket sont donc des services en ligne, qui héberge le dépôt distant. Il permet de stocker les différentes versions de votre code afin de garder un historique délocalisé pour assurer d’avoir une copie sur un réseau de vos travaux. 
 Vous allez donc avoir deux copies de votre projet, une en local et une en distanciel. C’est en local que les modifications des fichiers vont être réalisées et c’est en distanciel que les fichiers vont être stockés et diffusés au besoin si le dépôt est en public. 
 
 Mais du coup quelle est la différence entre GitHub, GitLab et Bitbucket ?
