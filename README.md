@@ -1,4 +1,5 @@
-# Git-starter-kit
+# ![header_isdm](images/header.png)
+
 <!-- BADGES -->
 [![Licence][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
@@ -61,7 +62,7 @@ Cette formation s'adresse au personne de toute communauté voulant débuter dans
     + Pour les distributions basées sur Debian, telle que Ubuntu, veuillez ouvrir votre terminal Linux est rentrer la commande :
 ```bash
 $ sudo apt install git-all ## Installation de git
-$ git --version ## Verification de l'installation
+$ git --version ## Vérification de l'installation
 ```
 
 ### Création de compte GitHub
@@ -136,12 +137,11 @@ git config --global user.name "votre nom / pseudo"
 git config --global user.email "user@example.com"
 
 ## Licence
+Distribué sous la Licence CC BY NC-SA. Voir `LICENCE.txt` pour plus d'information.
 
 ## Contact
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
+<!-- LIENS MARKDOWN -->
 [license-shield]:https://img.shields.io/badge/CC%20BY%20NC%20SA-Licence?style=for-the-badge&label=LICENCE&link=https%3A%2F%2Fgithub.com%2Fcmandier%2FGit-starter-kit%2Fblob%2Fmain%2FLICENCE.txt
 [license-url]: https://github.com/cmandier/Git-starter-kit/blob/main/LICENCE.txt
 [linkedin-shield]: https://img.shields.io/badge/Linkedin-ISDM?style=for-the-badge&color=%230e76a8&link=https%3A%2F%2Ffr.linkedin.com%2Fcompany%2Finstitut-de-science-des-donn%25C3%25A9es-montpellier%3Ftrk%3Dpublic_post_feed-actor-name
