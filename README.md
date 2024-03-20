@@ -1,4 +1,4 @@
-# ![header_isdm](images/header.png)
+# ![header_isdm](images/header.png =x900 300x)
 
 <!-- BADGES -->
 [![Licence][license-shield]][license-url]
