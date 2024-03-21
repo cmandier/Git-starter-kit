@@ -163,7 +163,7 @@ Il existe deux protocole pour pouvoir envoyer vos commits (version de fichiers) 
 Afin de créer une clé SSH, veuillez rentrer les commandes suivantes :
 
 ```bash
-ssh-keygen -t rsa -b 4096
+ssh-keygen -t ed25519 -C "user@exemple.com"
 ```
 Aller dans le dossier ~/.ssh/, ouvrez le fichier .pub copier la clé. 
 
@@ -185,14 +185,36 @@ pour régler ça faire
     Port 443 (ou 22)
 Normalement les push marchent après
 
+### Fork vs Clone
+
+![ForkClone](images/fork_clone.png)
+
 ### Création d'un projet via la plateforme GitHub (distant)
+
+différence entre clone(clonage) et fork (fork duplication du dépôt)
+
+Forking crée votre propre copie d'un référentiel dans un emplacement distant (par exemple, GitHub). Votre propre copie signifie que vous pourrez apporter des modifications à votre copie du référentiel sans affecter le référentiel d'origine.
+
+Le clonage crée une copie locale d'un référentiel, pas votre propre copie. Considérez cela comme le téléchargement d'un référentiel sur votre disque dur local. Contrairement aux forks, les clones ont des références à leurs référentiels d'origine.
+
 git clone classique ou fork 
+git clone git@github.com:cmandier/script.git
+git add file 
+git commit -m "test"
+git push
+git pull
+
 
 ### Création d'un projet sur votre machine (local)
+
 si dépôt distant pas créer 
 si dé^pot créer il faut le lier avec local 
 
 
+Ressources ++ 
+https://git-scm.com/doc
+https://docs.github.com/fr
+https://about.gitlab.com/
 
 
 ## Licence
