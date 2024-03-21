@@ -54,7 +54,7 @@ Cette formation s'adresse au personne de toute communauté voulant débuter dans
 - Modifier / ajouter / supprimer des fichiers
 - Gestion des commits
 - Notion de branch / merge
-- Ouverture vers la collaboration
+- Ouverture vers la collaboration / .gitignore
 
 ## Mise en place des outils
 
@@ -135,7 +135,7 @@ Dans l'espace `Repositories` vous trouverez une liste tous vos dépôts distants
 ![Repositories](images/repositories_github.png)
 
 
-## Création d'un projet
+## Configuration des outils
 
 ### Configuration de votre Git
 
@@ -163,7 +163,7 @@ Il existe deux protocole pour pouvoir envoyer vos commits (version de fichiers) 
 Afin de créer une clé SSH, veuillez rentrer les commandes suivantes :
 
 ```bash
-ssh-keygen -t ed25519 -C "user@exemple.com"
+$ ssh-keygen -t ed25519 -C "user@exemple.com"
 ```
 Aller dans le dossier ~/.ssh/, ouvrez le fichier .pub copier la clé. 
 
@@ -171,49 +171,107 @@ Puis aller dans les setting de votre profil dans la catégorie ssh and GPG key
 New SSH key coller votre clé et rajouter un titre.
 
 ```bash
-ssh -T git@github.com
+$ ssh -T git@github.com
 ```
 
-Si tout est bon vous aurez une message tel que Hi user, You've successfully authenticated, but GitHub does not provide shell access.
+La réponse attendue est `Hi user, You've successfully authenticated, but GitHub does not provide shell access`.
 
-Si vous n'avez pas ce message cela peut être un problème de port 
-pour régler ça faire 
- nano ~/.ssh/config
- et rentrer 
- Host github.com
-    Hostname ssh.github.com
-    Port 443 (ou 22)
-Normalement les push marchent après
+Si vous n'avez pas reçu ce message cela peut être dû à un problème de définition de port, ainsi veuillez taper ces commandes suivantes :
+
+```bash
+$ nano ~/.ssh/config
+```
+Indiquez ce texte dans la fenêtre (attention aux indentations)
+
+```bash
+Host github.com
+  Hostname ssh.github.com
+  Port 443
+```
+Et retenter cette commande :
+
+```bash
+$ ssh -T git@github.com
+```
+
+## Création d'un projet
 
 ### Fork vs Clone
+
+Un fork va créer votre propre copie d'un dépôt distant qui ne vous appartient pas. Vous pourrez alors modifier cette copie sans modifier le dépôt d'origine.
+
+Le clonage crée une copie locale d'un dépôt distant. Contrairement aux forks, les clonages ont un lien avec leur dépôt distant. Ainsi, lorsque vous modifiez les fichiers et que vous les  "pusher" cela va affecter le dépôt d'origine.
 
 ![ForkClone](images/fork_clone.png)
 
 ### Création d'un projet via la plateforme GitHub (distant)
 
-différence entre clone(clonage) et fork (fork duplication du dépôt)
+Il existe deux façon de créer un dépôt distant : 
+- Dans le cas où vous voulez récupérer le dépôt distant dont vous n'avez pas les droits, vous pouvez réaliser un fork. Une fois le fork réalisé via la plateforme vous pouvez faire un clone de votre dépôt distant afin d'avoir une version en local. Pour cela prenez l'adresse SSH proposée (ou HTTPS).
 
-Forking crée votre propre copie d'un référentiel dans un emplacement distant (par exemple, GitHub). Votre propre copie signifie que vous pourrez apporter des modifications à votre copie du référentiel sans affecter le référentiel d'origine.
+```bash
+$ git clone git@github.com:USER/DEPOT.git
 
-Le clonage crée une copie locale d'un référentiel, pas votre propre copie. Considérez cela comme le téléchargement d'un référentiel sur votre disque dur local. Contrairement aux forks, les clones ont des références à leurs référentiels d'origine.
+```
 
-git clone classique ou fork 
-git clone git@github.com:cmandier/script.git
-git add file 
-git commit -m "test"
-git push
-git pull
+Par la suite vous pouvez modifier les fichiers et ajouter vos commits via les commandes suivantes: 
 
+```bash 
+$ git add file #indication des fichiers qu'on veut commit
+$ git commit -m "message" #Attribution du message du commit
+$ git push #Envoi des commits sur le dépôt distant
+```
+
+- Si vous n'avez pas encore de dépôt local vous pouvez créer le dépôt distant en premier via la plateforme et taper les mêmes commandes décrites au-dessus.
 
 ### Création d'un projet sur votre machine (local)
 
-si dépôt distant pas créer 
-si dé^pot créer il faut le lier avec local 
+Pour initier un dépôt local, il faut ce mettre dans notre dossier de projet et taper :
+
+```bash
+$ git init
+```
+Un nouveau dossier `.git` va apparaitre.
+
+Vous pourrez alors commencer le versionnage de vos fichiers via les commandes :
+
+```bash
+$ git add file #indication des fichiers qu'on veut commit
+$ git commit -m "message" #Attribution du message du commit
+```
+Le but maintenant ça va être d'envoyer ces versions sur un dépôt distant pour cela plus
+Les autres manières de faire sont : 
+
+- Si le dépôt distant n'est pas créer : 
+
+```bash
+$ git branch -M main #Indique sur quelle branche est le référenciel
+$ git remote add origin git@github.com:USER/DEPOT.git ##Ajout du référenciel (url du dépôt distant non présent sur GitHub)
+$ git push -u origin main #Envoie des commits sur la branche main
+```
+
+- Si le dépôt distant est créer et qu'on veut le lier avec notre dépôt local alors taper :
+
+```bash
+$ git remote add origin git@github.com:USER/DEPOT.git #Ajout du référenciel (url du dépôt distant déjà présent du GitHub)
+$ git branch -M main #Indique sur quelle branche est le référenciel
+$ git push -u origin main #Envoie des commits sur la branche main
+```
+
+## Gestion des commits
+
+## Gestion des branch
 
 
-Ressources ++ 
+
+
+
+## Ressources en plus
+
 https://git-scm.com/doc
+
 https://docs.github.com/fr
+
 https://about.gitlab.com/
 
 
