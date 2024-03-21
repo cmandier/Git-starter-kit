@@ -139,7 +139,7 @@ Dans l'espace `Repositories` vous trouverez une liste tous vos dépôts distants
 
 ### Configuration de votre Git
 
-Avant toutes choses, il faut permettre à Git de vous identifier. C'est pour cela qu'il faut réaliser une configuration de votre identité. Pour cela, ouvrez votre terminal Linux et commencez à renseigner votre nom d'utilisateur (celui que vous allez utiliser sur la plateforme GitHub) et votre email (celle que vous allez utiliser sur la plateforme GitHub) à l'aide des commandes suivantes :
+Avant toutes choses, il faut permettre à Git de vous identifier. C'est pour cela qu'il faut réaliser une configuration de votre identité. Ainsi, ouvrez votre terminal Linux et commencez à renseigner votre nom d'utilisateur (celui que vous allez utiliser sur la plateforme GitHub) et votre email (celle que vous allez utiliser sur la plateforme GitHub) à l'aide des commandes suivantes :
 
 ```bash
 $ git config --global user.name "nom.utilisateur" 
@@ -154,12 +154,43 @@ Ensuite, vérifier vos informations via la commande :
 $ git config --list 
 
 ```
+### Configuration de votre clé SSH
 
+Il existe deux protocole pour pouvoir envoyer vos commits (version de fichiers) sur le dépôt distant :
+- HTTPS qui vous demandera de renseigner votre identifant et votre mot de passe à chaque "push" des commits
+- SSH (Secure Shell) qui est le protocole plus utilisé. Pour utiliser ce protocole il faut définir une clé SSH et la rentrer sur la plateforme de dépôt distant (ici GitHub). Ce protocole une fois mis en place ne vous demandera pas votre identifiant et mot de passe à chaque push de commits.
+
+Afin de créer une clé SSH, veuillez rentrer les commandes suivantes :
+
+```bash
+ssh-keygen -t rsa -b 4096
+```
+Aller dans le dossier ~/.ssh/, ouvrez le fichier .pub copier la clé. 
+
+Puis aller dans les setting de votre profil dans la catégorie ssh and GPG key 
+New SSH key coller votre clé et rajouter un titre.
+
+```bash
+ssh -T git@github.com
+```
+
+Si tout est bon vous aurez une message tel que Hi user, You've successfully authenticated, but GitHub does not provide shell access.
+
+Si vous n'avez pas ce message cela peut être un problème de port 
+pour régler ça faire 
+ nano ~/.ssh/config
+ et rentrer 
+ Host github.com
+    Hostname ssh.github.com
+    Port 443 (ou 22)
+Normalement les push marchent après
 
 ### Création d'un projet via la plateforme GitHub (distant)
-
+git clone classique ou fork 
 
 ### Création d'un projet sur votre machine (local)
+si dépôt distant pas créer 
+si dé^pot créer il faut le lier avec local 
 
 
 
