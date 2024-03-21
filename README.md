@@ -260,6 +260,16 @@ $ git push -u origin main #Envoie des commits sur la branche main
 
 ## Gestion des commits
 
+git status
+
+git log
+
+git commit --amend -m "Votre nouveau message de commit"
+
+git add FichierOublie.txt
+
+git commit --amend --no-edit
+
 ## Gestion des branch
 
 
