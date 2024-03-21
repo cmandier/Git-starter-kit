@@ -163,7 +163,7 @@ Il existe deux protocole pour pouvoir envoyer vos commits (version de fichiers) 
 Afin de créer une clé SSH, veuillez rentrer les commandes suivantes :
 
 ```bash
-$ ssh-keygen -t ed25519 -C "user@exemple.com"
+$ ssh-keygen -t ed25519 -C "utilisateur@exemple.com"
 ```
 Aller dans le dossier ~/.ssh/, ouvrez le fichier .pub copier la clé. 
 
