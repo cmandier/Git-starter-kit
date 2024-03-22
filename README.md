@@ -45,16 +45,18 @@ Cette formation s'adresse au personne de toute communauté voulant débuter dans
 
 ### Prérequis
 
+- Ordinateur personnel
 - Système d'exploitation demandé : Linux ou Windows 10 / 11 avec [WSL2](https://learn.microsoft.com/fr-fr/windows/wsl/about) 
-- Notion de base des commandes Unix
+- Notion de base des commandes Linux
+- Installation au préalable des outils Git (et WSL2)
+- Création du compte GitHub
 
 ### Objectifs 
 
 - Créer un dépôt local et distant 
 - Modifier / ajouter / supprimer des fichiers
 - Gestion des commits
-- Notion de branch / merge
-- Ouverture vers la collaboration / .gitignore
+- Notion de branche
 
 ## Mise en place des outils
 
